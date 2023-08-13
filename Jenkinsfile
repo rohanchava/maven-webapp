@@ -1,6 +1,9 @@
 
 pipeline {
   agent any
+  tools {
+        maven 'Maven 3.9.4' // Specify the name you gave to the Maven installation in Jenkins configuration
+    }
   environment {
         TOMCAT_USERNAME = "admin"
         TOMCAT_PASSWORD = "admin"
